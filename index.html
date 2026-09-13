@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171512">
+  <title>Fita 78 — Brechó Vintage</title>
+  <meta name="description" content="Fita 78 — brechó vintage com peças selecionadas, histórias e estilo atemporal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">PEÇAS ÚNICAS • ENVIO PARA TODO O BRASIL • GARIMPO COM HISTÓRIA</div>
+
+  <header class="header">
+    <a class="logo" href="#inicio">FITA<span>78</span></a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#pecas">Peças</a>
+      <a href="#historia">Nossa história</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+      Sacola <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">BRECHÓ VINTAGE · DESDE 1978</p>
+        <h1>Roupa boa<br><em>não envelhece.</em></h1>
+        <p class="hero-text">Garimpos com personalidade, escolhidos peça por peça. Vintage de verdade para quem prefere vestir história.</p>
+        <a class="primary-btn" href="#pecas">Ver o garimpo <span>→</span></a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-sticker">GARIMPO<br>DA SEMANA</div>
+        <div class="hero-image"><img src="https://i.ibb.co/zTyTv7xB/0b20c6bf9d2bdce0583cff3f50d6d36c.jpg" alt="Jaqueta de couro Fita 78"></div>
+        <div class="hero-caption">
+          <strong>Couro 90s</strong>
+          <span>R$ 189,90</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Categorias">
+      <span>CAMISETAS</span><b>✦</b><span>JAQUETAS</span><b>✦</b><span>JEANS</span><b>✦</b><span>ACESSÓRIOS</span><b>✦</b><span>CAMISETAS</span><b>✦</b><span>JAQUETAS</span>
+    </section>
+
+    <section class="products-section" id="pecas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">O GARIMPO</p>
+          <h2>Peças que falam.</h2>
+        </div>
+        <p>Unidades únicas. Se gostou, não deixa pra depois.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="camisetas">Camisetas</button>
+        <button class="filter" data-filter="jaquetas">Jaquetas</button>
+        <button class="filter" data-filter="calcas">Calças</button>
+        <button class="filter" data-filter="acessorios">Acessórios</button>
+      </div>
+
+      <div class="products" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="historia">
+      <div class="story-photo">
+        <div class="film-label">FITA 78 / SP</div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">POR TRÁS DO BRECHÓ</p>
+        <h2>Menos tendência.<br><em>Mais identidade.</em></h2>
+        <p>A Fita 78 nasceu da vontade de tirar roupas esquecidas do armário e colocar histórias de volta na rua.</p>
+        <p>A gente garimpa sem pressa: peças com tecido bom, caimento interessante, marcas antigas e aquela imperfeição que faz cada roupa ser diferente.</p>
+        <div class="signature">— Fita 78</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><strong>01</strong><h3>Peça única</h3><p>Você dificilmente vai encontrar outra igual por aqui.</p></div>
+      <div><strong>02</strong><h3>Garimpo manual</h3><p>Cada peça passa por uma seleção antes de entrar na loja.</p></div>
+      <div><strong>03</strong><h3>Envio seguro</h3><p>Embalagem cuidadosa e envio para todo o Brasil.</p></div>
+    </section>
+
+    <section class="newsletter" id="contato">
+      <div>
+        <p class="eyebrow">NÃO PERCA O PRÓXIMO DROP</p>
+        <h2>Entre para a lista.</h2>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="seu@email.com" required>
+        <button type="submit">Quero entrar →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">FITA<span>78</span></div>
+    <p>Brechó vintage independente · São Paulo</p>
+    <div class="footer-links">
+      <a href="https://wa.me/5511952147338" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.tiktok.com/@fita.78" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <small>© 2026 Fita 78. Feito para quem gosta de roupa com história.</small>
+  </footer>
+
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Sua sacola</h2>
+      <button id="closeCart" aria-label="Fechar">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom">
+      <div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="checkout" id="checkout">Finalizar pedido</button>
+      <p>Você será direcionado para o WhatsApp para combinar pagamento e entrega.</p>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeProduct" aria-label="Fechar">×</button>
+      <div class="modal-photo"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-content">
+        <p class="eyebrow" id="modalTag"></p>
+        <h2 id="modalName"></h2>
+        <p id="modalMeta"></p>
+        <strong class="modal-price" id="modalPrice"></strong>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="modal-actions">
+          <button class="primary-btn" id="modalAdd">Adicionar à sacola <span>→</span></button>
+          <a class="whatsapp-btn" id="modalWhatsapp" href="#" target="_blank" rel="noopener">Tenho interesse pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
